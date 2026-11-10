@@ -1,0 +1,11 @@
+# Placeholder demo tokens in documentation examples, replaced by $PYBRAIN_API_KEY.
+# The historical values were never real credentials (format: abc-def-ghi-123),
+# so no revocation or history rewrite is required.
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:README.md:curl-auth-header:267
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:README.md:curl-auth-header:273
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:README.md:curl-auth-header:277
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:docs/API.md:curl-auth-header:312
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:docs/API.md:curl-auth-header:320
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:docs/API.md:curl-auth-header:326
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:docs/API.md:curl-auth-header:332
+fd3c6cc68307e5d805740b6e602a8597d486a8bb:docs/API.md:curl-auth-header:336

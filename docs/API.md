@@ -19,7 +19,7 @@ All endpoints require authentication via JWT bearer token or API key (research m
 
 ### Headers
 ```
-Authorization: Bearer <token-or-api-key>
+Authorization: Bearer $PYBRAIN_API_KEY
 ```
 
 ### Research Mode
@@ -310,7 +310,7 @@ The full OpenAPI schema is available at:
 ```bash
 # Upload case
 curl -X POST http://localhost:8000/cases \
-  -H "Authorization: Bearer dev-api-key-123" \
+  -H "Authorization: Bearer $PYBRAIN_API_KEY" \
   -F "files=@case.zip" \
   -F "analysis_mode=auto"
 
@@ -318,23 +318,23 @@ curl -X POST http://localhost:8000/cases \
 
 # Trigger segmentation
 curl -X POST http://localhost:8000/cases/{case_id}/segment \
-  -H "Authorization: Bearer dev-api-key-123"
+  -H "Authorization: Bearer $PYBRAIN_API_KEY"
 
 # Response: {"job_id": "...", "status": "pending"}
 
 # Poll job status
 curl http://localhost:8000/jobs/{job_id} \
-  -H "Authorization: Bearer dev-api-key-123"
+  -H "Authorization: Bearer $PYBRAIN_API_KEY"
 
 # Response: {"job_id": "...", "status": "success", ...}
 
 # Get case results
 curl http://localhost:8000/cases/{case_id} \
-  -H "Authorization: Bearer dev-api-key-123"
+  -H "Authorization: Bearer $PYBRAIN_API_KEY"
 
 # Download segmentation
 curl http://localhost:8000/cases/{case_id}/segmentation \
-  -H "Authorization: Bearer dev-api-key-123" \
+  -H "Authorization: Bearer $PYBRAIN_API_KEY" \
   -o segmentation.nii.gz
 ```
 

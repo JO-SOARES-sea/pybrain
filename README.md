@@ -265,17 +265,17 @@ The API service includes:
 ```bash
 # Upload a case
 curl -X POST http://localhost:8000/cases \
-  -H "Authorization: Bearer dev-api-key-123" \
+  -H "Authorization: Bearer $PYBRAIN_API_KEY" \
   -F "files=@case.zip" \
   -F "analysis_mode=auto"
 
 # Trigger segmentation
 curl -X POST http://localhost:8000/cases/{case_id}/segment \
-  -H "Authorization: Bearer dev-api-key-123"
+  -H "Authorization: Bearer $PYBRAIN_API_KEY"
 
 # Get results
 curl http://localhost:8000/cases/{case_id} \
-  -H "Authorization: Bearer dev-api-key-123"
+  -H "Authorization: Bearer $PYBRAIN_API_KEY"
 ```
 
 See [docs/API.md](docs/API.md) for full API reference and [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for deployment details.
